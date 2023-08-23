@@ -12,10 +12,10 @@ class CharacteristicMissingError(Exception):
 
 
 POSSIBLE_WRITE_CHARACTERISTIC_UUIDS = [
-    BASE_UUID_FORMAT.format(part) for part in ["ff01", "ffd5", "ffd9", "ffe5", "ffe9"]
+    BASE_UUID_FORMAT.format(part) for part in ["ff01", "ffd5", "ffd9", "ffe5", "ffe9", "a040"]
 ]
 POSSIBLE_READ_CHARACTERISTIC_UUIDS = [
-    BASE_UUID_FORMAT.format(part) for part in ["ff02", "ffd0", "ffd4", "ffe0", "ffe4"]
+    BASE_UUID_FORMAT.format(part) for part in ["ff02", "ffd0", "ffd4", "ffe0", "ffe4", "a041"]
 ]
 
 QUERY_STATE_BYTES = bytearray([0xEF, 0x01, 0x77])
