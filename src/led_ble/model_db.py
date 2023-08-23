@@ -77,6 +77,15 @@ MODELS = [
         ],
         color_modes=COLOR_MODES_RGB_W,  # Formerly rgbwcapable
     ),
+    LEDBLEModel(
+        model_num=0x05,
+        models=["ilink app~MAC"],
+        description="Controller RGB&W",
+        protocols=[
+            MinVersionProtocol(0, PROTOCOL_LEDENET_ORIGINAL_RGBW),
+        ],
+        color_modes={COLOR_MODE_RGBW},  # Formerly rgbwcapable
+    ),
 ]
 
 
